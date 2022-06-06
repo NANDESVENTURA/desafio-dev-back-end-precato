@@ -17,7 +17,7 @@ Esta api é um servidor que recebe inscrições em um formulário, caso válido,
 
 - [x]  A propriedade "last_message" não deve ser atualizada em inscrições marcadas com "active" igual a "false".
 
-- [x] Aaso a inscrição já tenha recebido todas as mensagens do fluxo, a propriedade "active" deve ser marcada como "false".
+- [x] Caso a inscrição já tenha recebido todas as mensagens do fluxo, a propriedade "active" deve ser marcada como "false".
 
 
 ## Começando
@@ -27,8 +27,8 @@ Esta api é um servidor que recebe inscrições em um formulário, caso válido,
 - Criar um arquivo ```.env``` para armezenzar dados sensiveis a aplicação, como as credenciais e a conexão MySQL.
 
 ```.env
-PORT = <porta que a aplicação vai usar na execução>
-MYSQL_USER= <User do banco relacional>
+PORT=<porta que a aplicação vai usar na execução>
+MYSQL_USER=<User do banco relacional>
 MYSQL_PASSWORD=<Senha do banco relacional>
 MYSQL_DATABASE=<Nome do model do banco>
 MYSQL_HOST=<host do banco>
@@ -47,7 +47,7 @@ A aplicação contem oito rotas:
 - ```/subscription/list``` : retorna todos as inscrições feitas no banco de dados.
 - ```/subscription/get/:id``` : retorna a inscrição no banco de acordo com o Id passado.
 - ```/subscription/create```: cria uma inscrição no banco de dados.
-- ```/subscription/delete/:id```: deleta a inscriçao do banco de dados de acordo com o id passado.
+- ```/subscription/delete/:id```: deleta a inscrição do banco de dados de acordo com o id passado.
 - ```/subscription/patch/:id``` : faz atualização na inscrição, mudando o status da coluna active entre true e false, de acordo com o id passado.
 - ```/message/list``` : retorna todos as mensagens criadas no banco de dados.
 - ```/message/get/:id``` : retorna a mensagem no banco de acordo com o Id passado.
@@ -59,4 +59,4 @@ A aplicação contem oito rotas:
 ## Autor
 *Ernandes Ventura Silva Neto*
 
-[![Twitter Badge](https://img.shields.io/badge/-@nandesventura-6633cc?style=flat-square&labelColor=000000&logo=twitter&logoColor=white&link=https://twitter.com/nandesventura)](https://twitter.com/nandesventura) [![Linkedin Badge](https://img.shields.io/badge/-Ernandes%20Ventura-6633cc?style=flat-square&logo=Linkedin&logoColor=black&link=https://www.linkedin.com/in/ernandes-ventura-892a88119/)](https://www.linkedin.com/in/ernandes-ventura-892a88119/)# desafio-dev-back-end-precato
+[![Twitter Badge](https://img.shields.io/badge/-@nandesventura-6633cc?style=flat-square&labelColor=000000&logo=twitter&logoColor=white&link=https://twitter.com/nandesventura)](https://twitter.com/nandesventura) [![Linkedin Badge](https://img.shields.io/badge/-Ernandes%20Ventura-6633cc?style=flat-square&logo=Linkedin&logoColor=black&link=https://www.linkedin.com/in/ernandes-ventura-892a88119/)](https://www.linkedin.com/in/ernandes-ventura-892a88119/)
